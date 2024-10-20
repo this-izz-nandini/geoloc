@@ -69,19 +69,15 @@ To run the application using Docker, following these steps:
 
 1. *Build the Docker image:*
 ```
-   docker build -t geolocation-flask-app .
+   docker pull nandiiniij/geoloc:latest 
 ```   
 
 2. *Run the Docker container:*
 ```
-   docker run -p 5000:5000 --env-file .env geolocation-flask-app
+   docker run -p 5000:5000 --env-file .env nandiiniij/geoloc
 ```
 OR use 
 ```
-   docker run -p 5000:5000 --env API_KEY=<api_key> geolocation-flask-app
+   docker run -p 5000:5000 --env API_KEY=<api_key> nandiiniij/geoloc
 ```
-
-*Link to Docker image:*
-
-```  docker pull nandiiniij/geo-loc:latest ```
    
