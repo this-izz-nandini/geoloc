@@ -67,12 +67,13 @@ This project is a simple web application built with Flask that allows users to r
 
 To run the application using Docker, following these steps:
 
-1. *Build the Docker image:*
+1. Pull the Docker image:
 ```
    docker pull nandiiniij/geoloc:latest 
 ```   
+**NOTE** - For *building a docker image* from the git repo, use: ```docker build -t <image-name> .```
 
-2. *Run the Docker container:*
+2. Run the Docker container:
 ```
    docker run -p 5000:5000 --env-file .env nandiiniij/geoloc
 ```
